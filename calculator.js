@@ -1,28 +1,24 @@
 // Calculator History Array 
 let calculationHistory = [];
 
-// Function to add 
 function add(num1, num2) {
   const result = num1 + num2;
   addToHistory(num1, num2, '+', result);
   return result;
-}
+} // Function to add 
 
-// Function to subtract 
 function subtract(num1, num2) {
   const result = num1 - num2;
   addToHistory(num1, num2, '-', result);
   return result;
-}
+}// Function to subtract 
 
-// Function to multiply 
 function multiply(num1, num2) {
   const result = num1 * num2;
   addToHistory(num1, num2, '*', result);
   return result;
-}
+}// Function to multiply 
 
-// Function to divide 
 function divide(num1, num2) {
   if (num2 === 0) {
     console.log("Error: Cannot divide by zero.");
@@ -31,9 +27,9 @@ function divide(num1, num2) {
   const result = num1 / num2;
   addToHistory(num1, num2, '/', result);
   return result;
-}
+}// Function to divide 
 
-// Function to add calculation to history
+
 function addToHistory(operand1, operand2, operator, result) {
   const calculation = {
     operand1: operand1,
@@ -42,9 +38,8 @@ function addToHistory(operand1, operand2, operator, result) {
     result: result
   };
   calculationHistory.push(calculation);
-}
+}// Function to add calculation to history
 
-// Function to display history
 function displayHistory() {
   if (calculationHistory.length === 0) {
     console.log("No calculations yet.");
@@ -56,4 +51,4 @@ function displayHistory() {
       );
     });
   }
-}
+}// Function to display history
