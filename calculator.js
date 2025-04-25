@@ -57,3 +57,19 @@ function displayHistory() {
     });
   }
 }
+
+    // tests
+    console.log(add(5, 2));         // 7
+    console.log(subtract(10, 3));   // 7
+    console.log(multiply(4, 6));    // 24
+    console.log(divide(8, 2));      // 4
+    console.log(divide(5, 0));      // Error
+
+    // more tests
+    console.log(add(2, 2));        // 4
+    console.log(subtract(10, 5)); // 5
+    console.log(multiply(3, 4));  // 12
+    console.log(divide(12, 4));   // 3
+    console.log(divide(10, 0));   // Error
+
+    displayHistory();
